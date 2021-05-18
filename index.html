@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Simple Demo Website</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<style type="text/css" media="screen">
+		
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="image-container">
+
+			<div class="big-image">
+				<img src="img/pic-1.jpg" id="zoom">
+			</div>
+
+			<div class="small-image">
+				<img src="img/pic-2.jpg">
+				<img src="img/pic-3.jpg">
+				<img src="img/pic-4.jpg">
+			</div>
+		</div>
+
+		<div class="content">
+			<h1>This is a container.</h1>
+			<p>lorem ipsum is a great thing for dummy content and also good quality full source.</p>
+
+			<div class="stars">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half"></i>
+			</div>
+			<div class="price">$2,000/- <span>1,400/-</span></div>
+			<a href="#"><button>add to cart <i class="fa fa-shopping-cart"></i></button></a>
+		</div>
+
+	</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.0.min.js" 
+        integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6" 
+        crossorigin="anonymous">
+</script>
+<script src="zoomsl.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+  $(".small-image img").click(function(){
+  	var image = $(this).attr('src');
+    $(".big-image img").attr('src', image);
+  });
+
+  $("#zoom").imagezoomsl({
+  	// zoom range  
+  	zoomrange: [6, 6], 
+  });
+
+
+});
+
+</script>
+	
+</body>
+</html>

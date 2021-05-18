@@ -1,0 +1,100 @@
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	transition: all .2s linear;
+	text-transform: capitalize;
+}
+html{
+	font-size: 62.5%;
+}
+.container{
+	height: 50rem;
+	width: 90rem;
+	border-radius: .5rem;
+	box-shadow: 0 .5rem 1rem rgba(51,51,51,.2);
+	display: flex;
+	margin: 10rem auto;
+	overflow: hidden;
+}
+.image-container{
+	width: 50%;
+}
+.big-image{
+	height: 70%;
+	width: 100%;
+	padding: 1rem;
+}
+.big-image img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	box-shadow: 0 .5rem 1rem rgba(51,51,51,.2);
+}
+.small-image{
+	height: 30%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.small-image img{
+	height: 13rem;
+	width: 13rem;
+	object-fit: cover;
+	cursor: pointer;
+	box-shadow: 0 .5rem 1rem rgba(51,51,51,.2);
+	transition: 1s;
+}
+.small-image img:hover{
+	transform: scale(.7);
+}
+.content{
+	width: 50%;
+	position: relative;
+	padding: 2rem;
+}
+.content h1{
+	font-size: 4rem;
+	padding-top: 2rem;
+	color: crimson;
+}
+.content p{
+	font-size: 1.8rem;
+	color: #333;
+	padding: 1rem 0;
+}
+.stars i{
+	font-size: 2rem;
+	color: gold;
+}
+.price{
+	font-size: 3rem;
+	color: #333;
+	margin-top: 2rem;
+}
+.price span{
+	font-size: 2rem;
+	color: #333;
+	text-decoration: line-through;
+}
+.content button{
+	position: absolute;
+	height: 4rem;
+	width: 16rem;
+	font-size: 1.5rem;
+	bottom: 2rem;
+	right: 2rem;
+	border: none;
+	outline: none;
+	background: crimson;
+	color: #fff;
+	box-shadow: 0 .5rem 1rem rgba(255, 92, 51, .8);
+}
+.content button:hover{
+	background: #ccc;
+	letter-spacing: .1rem;
+	cursor: pointer;
+	color: #000;
+	box-shadow: 0 .5rem 1rem rgba(204, 204, 204, 1);
+}
